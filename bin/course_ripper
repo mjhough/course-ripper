@@ -2,7 +2,3 @@
 require_relative '../lib/course_ripper'
 
 CourseRipper::CLI.new.call
-
-get '/' do
-    CourseRipper::CLI.new.call
-   end
