@@ -1,13 +1,14 @@
 class CourseRipper::Scraper
 
-    @base_url = "https://www.library.uq.edu.au/uqlsm/" # URL without page
-    @main_page = "availablepcsembed.php" # Page to append to URL
-    @main_url = "#{@base_url}#{@main_page}" # Adds page and URL together
+  @base_url = "https://learn.uq.edu.au" # URL without page
+    # @main_page = "availablepcsembed.php" # Page to append to URL
+    # @main_url = "#{@base_url}#{@main_page}" # Adds page and URL together
     
 
     def self.scrape_main_page # Scrapes the main libraries page for primary details
-        libraries = []
-        frontpage = Nokogiri::HTML(open(@main_url))
+        frontpage = Nokogiri::HTML(open(@base_url))
+
+        binding.pry
 
         frontpage.css(".chart tr").each do |row|
             name = row.css("a[href]").text

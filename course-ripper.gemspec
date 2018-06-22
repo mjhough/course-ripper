@@ -13,12 +13,16 @@ Gem::Specification.new do |s|
     s.license     = 'MIT'
     s.executables << 'course-ripper'
 
-    s.add_runtime_dependency "colorize", "~> 0.8.1"
+    s.add_runtime_dependency "colorize"
+    s.add_runtime_dependency "capybara"
+    s.add_runtime_dependency "poltergeist"
+    s.add_runtime_dependency "selenium-webdriver"
+    s.add_runtime_dependency "timeout"
 
-    s.add_development_dependency "bundler", "~> 1.15.4"
-    s.add_development_dependency "rake", "~> 12.0.0"
-    s.add_development_dependency "rspec", ">= 0"
-    s.add_development_dependency "nokogiri", ">= 0"
+    s.add_development_dependency "bundler"
+    s.add_development_dependency "rake"
+    s.add_development_dependency "rspec"
+    s.add_development_dependency "nokogiri"
     
-    s.add_dependency "pry", ">= 0"
+    s.add_dependency "pry"
 end

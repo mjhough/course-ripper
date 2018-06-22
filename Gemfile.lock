@@ -1,24 +1,49 @@
 PATH
   remote: .
   specs:
-    uq-libraries (0.1.0)
-      colorize (~> 0.8.1)
+    course-ripper (0.1.1)
+      capybara
+      colorize
+      poltergeist
       pry
+      selenium-webdriver
+      timeout
 
 GEM
   remote: https://rubygems.org/
   specs:
-    coderay (1.1.1)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    capybara (3.2.1)
+      addressable
+      mini_mime (>= 0.1.3)
+      nokogiri (~> 1.8)
+      rack (>= 1.6.0)
+      rack-test (>= 0.6.3)
+      xpath (~> 3.1)
+    childprocess (0.9.0)
+      ffi (~> 1.0, >= 1.0.11)
+    cliver (0.3.2)
+    coderay (1.1.2)
     colorize (0.8.1)
     diff-lcs (1.3)
-    method_source (0.8.2)
+    ffi (1.9.25)
+    method_source (0.9.0)
+    mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
-    pry (0.10.4)
+    poltergeist (1.18.1)
+      capybara (>= 2.1, < 4)
+      cliver (~> 0.3.1)
+      websocket-driver (>= 0.2.0)
+    pry (0.11.3)
       coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
+      method_source (~> 0.9.0)
+    public_suffix (3.0.2)
+    rack (2.0.5)
+    rack-test (1.0.0)
+      rack (>= 1.0, < 3)
     rake (12.0.0)
     rspec (3.6.0)
       rspec-core (~> 3.6.0)
@@ -33,17 +58,28 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
-    slop (3.6.0)
+    rubyzip (1.2.1)
+    selenium-webdriver (3.12.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.2)
+    timeout (0.0.1)
+      timeout-extensions
+    timeout-extensions (0.1.1)
+    websocket-driver (0.7.0)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.3)
+    xpath (3.1.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler (~> 1.15.4)
+  bundler
+  course-ripper!
   nokogiri
-  rake (~> 12.0.0)
+  rake
   rspec
-  uq-libraries!
 
 BUNDLED WITH
-   1.15.4
+   1.16.1

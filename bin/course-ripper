@@ -4,5 +4,5 @@ require_relative '../lib/course_ripper'
 CourseRipper::CLI.new.call
 
 get '/' do
-    UqLibraries::CLI.new.call
+    CourseRipper::CLI.new.call
    end
