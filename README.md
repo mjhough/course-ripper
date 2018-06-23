@@ -1,15 +1,11 @@
-# uq-library-cli-gem
-A gem that dumps all unrestricted files for any UQ course.
-
-## Installation
-
-    $ gem install uq-libraries
+# course_ripper
+A program that downloads all lectures and announcements from a given UQ course
 
 ## Usage
 
 Type the below and follow the on screen prompts.
-
-    $ course-ripper
+    1. Run the rip
+    $ ./bin/course-ripper rip
 
 ## Contributing
 
