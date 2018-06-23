@@ -15,9 +15,7 @@ Gem::Specification.new do |s|
 
     s.add_runtime_dependency "colorize"
     s.add_runtime_dependency "capybara"
-    s.add_runtime_dependency "poltergeist"
     s.add_runtime_dependency "selenium-webdriver"
-    s.add_runtime_dependency "timeout"
 
     s.add_development_dependency "bundler"
     s.add_development_dependency "rake"

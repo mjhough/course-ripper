@@ -4,10 +4,8 @@ PATH
     course-ripper (0.1.1)
       capybara
       colorize
-      poltergeist
       pry
       selenium-webdriver
-      timeout
 
 GEM
   remote: https://rubygems.org/
@@ -23,7 +21,6 @@ GEM
       xpath (~> 3.1)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
-    cliver (0.3.2)
     coderay (1.1.2)
     colorize (0.8.1)
     diff-lcs (1.3)
@@ -33,10 +30,6 @@ GEM
     mini_portile2 (2.3.0)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
-    poltergeist (1.18.1)
-      capybara (>= 2.1, < 4)
-      cliver (~> 0.3.1)
-      websocket-driver (>= 0.2.0)
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
@@ -62,12 +55,6 @@ GEM
     selenium-webdriver (3.12.0)
       childprocess (~> 0.5)
       rubyzip (~> 1.2)
-    timeout (0.0.1)
-      timeout-extensions
-    timeout-extensions (0.1.1)
-    websocket-driver (0.7.0)
-      websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.3)
     xpath (3.1.0)
       nokogiri (~> 1.8)
 
