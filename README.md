@@ -18,7 +18,7 @@ $ ./bin/course-ripper rip COURSE username password
 $ ./bin/course-ripper rename COURSE
 ```    
 
-3. Access the files at ~/Lectures/COURSE_CODE
+3. Access the files at `~/Lectures/COURSE_CODE`
 
 ## License
 
