@@ -2,10 +2,16 @@ class CourseRipper::Ripper
   include Capybara::DSL
   attr_reader :username, :password, :course
 
-  def initialize(username, password, course)
+  def initialize(username:, password:, course:)
     @username = username
     @password = password
     @course = course
+  end
+
+  def set_dir
+    dir = "#{Dir.home}/Lectures/#{@course}"
+    FileUtils::mkdir_p "#{dir}" unless Dir.exist?(dir)
+    Dir.chdir(dir)
   end
 
   def setup
@@ -19,8 +25,6 @@ class CourseRipper::Ripper
       Capybara::Selenium::Driver.new(app, :browser => :firefox, :profile => profile)
     end
     Capybara.default_driver = :custom_driver
-
-    Dir.chdir("#{Dir.home}/Lectures/#{@course}")
   end
 
   def rip

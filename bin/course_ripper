@@ -1,4 +1,11 @@
 #!/usr/bin/env ruby
 require_relative '../lib/course_ripper'
 
-CourseRipper::CLI.new.call
+if (ARGV.length == 2 && ARGV[0] == 'rename') || (ARGV.length == 4 && ARGV[0] == 'rip')
+  CourseRipper::CLI.new.call(ARGV)
+else
+  puts 'Usage:'
+  puts 'course_ripper rip COURSE username password'
+  puts 'OR...'
+  puts 'course_ripper rename COURSE'
+end
